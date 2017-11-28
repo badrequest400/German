@@ -33,12 +33,12 @@ int main(int argc, char** argv) {
     inputarray[i] = fgetc(input);
   int j = 0;
   for(int i = 0; i < size - 9; i++) {
-    if(toupper(inputarray[i]) == 'B' && (toupper(inputarray[i + 1]) == 'E' || toupper(inputarray[i + 1]) == 'I') && toupper(inputarray[i + 2]) == 'E' && toupper(inputarray[i + 3]) == 'R') {
+    if(toupper(inputarray[i]) == 'L' && toupper(inputarray[i + 1]) == 'A' && toupper(inputarray[i + 2]) == 'D' && toupper(inputarray[i + 3]) == 'S') {
       c |= (1 << (7 - j));
       i+=4;
       j++;
     }
-    else if(toupper(inputarray[i]) == 'S' && toupper(inputarray[i + 1]) == 'C' && toupper(inputarray[i + 2]) == 'H' && toupper(inputarray[i + 3]) == 'N' && toupper(inputarray[i + 4]) == 'I' && toupper(inputarray[i + 5]) == 'T' && toupper(inputarray[i + 6]) == 'Z' && toupper(inputarray[i + 7]) == 'E' && toupper(inputarray[i + 8]) == 'L') {
+    else if(toupper(inputarray[i]) == 'B' && toupper(inputarray[i + 1]) == 'E' && toupper(inputarray[i + 2]) == 'E' && toupper(inputarray[i + 3]) == 'R' && toupper(inputarray[i + 4]) == 'S') {
       i+=9;
       j++;
     }
